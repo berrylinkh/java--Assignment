@@ -1,0 +1,9 @@
+Question 11
+
+System.out.println(total);
+double total=price+tax;
+
+Answer
+The program will not compile because the method sequence are not properly
+arranged. The data type, variable name and value must always be above the
+system.out.print for sequence statement. the compiler Check the arrangement of the code 

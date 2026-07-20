@@ -1,0 +1,3 @@
+Question 24
+
+if else is a single conditional statement for two possible outcome such as true or false while if/else chain is conditional statement for more than three outcome.

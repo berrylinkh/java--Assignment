@@ -1,0 +1,11 @@
+Question 34
+
+
+double equals(==) is an equality operator in java for comparing numbers while .equals is use to compare text.
+
+example
+if(username == admin && numberOne.equals (100))--- This is a wrong state of expression comparison which will be incorrect result when printed.
+
+if(username.equals(admin) && numberOne == 100)--- This is an example of correct comparison expression.
+	
+	
