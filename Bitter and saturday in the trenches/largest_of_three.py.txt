@@ -1,0 +1,11 @@
+a =int(input("Enter value : "))
+b =int(input("Enter value : "))
+c =int(input("Enter value : "))
+if a > b and a > c:
+	print("The largest is: ", a)
+
+if b > a and b > c :
+	print("largest is: ", b)
+
+if c > a and c > b :
+	print("largest is: ", c)

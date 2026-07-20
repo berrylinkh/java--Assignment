@@ -1,0 +1,30 @@
+/* PSUEDOCODE FOR REVERSE TO FORWARD
+1 START
+2. CREATE A CLASS AND A MAIN METHOD
+3. INITIAL FOR LOOP FOR POSITIVE AND NEGATIVE COUNTER 
+4. CLOSE LOOP
+5. DISPLAY THE RESULT AT THE PROGRAM.
+6. END */
+
+	
+import java.util.Scanner;
+	public class PositiveReverse {
+	public static void main (String [] args) {
+	Scanner input = new Scanner(System.in); 
+		int subtrator =0;
+
+		System.out.print("Enter positive number: ");
+		int number = input.nextInt();
+
+		Boolean = true
+		while(number <= 1) {
+		subtrator --;
+		System.out.print( number + " " );
+
+				}
+	if number % 2==0;
+	System.out.print( "This is not an even number");
+
+	}
+}
+

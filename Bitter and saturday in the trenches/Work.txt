@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+	public class Work{
+	public static void main(String[]args){
+	Scanner input = new Scanner(System.in);
+
+	System.out.print("Hours worked: ");
+	double HoursWorked = input.nextDouble();
+
+	System.out.print("Hours rate: ");
+	double HoursRate = input.nextDouble();
+
+	System.out.print("Bonus: ");
+	double bonus = input.nextDouble();
+
+	System.out.print("Tax rate: ");
+	double taxrate = input.nextDouble();
+
+	double GrossPay = Hoursworked * Hoursrated ;
+	double TaxAmount = Grosspay * (taxrate / 100);
+	double NetPay = TaxAmount - GrossPay;
+	
+	System.out.printf("Gross pay = %.2f%n ", GrossPay);
+	System.out.printf("Tax Amount = %.2f%n ", TaxAmount);
+	System.out.printf("Net Pay = %.2f%n ", NetPay);
+ }
+}

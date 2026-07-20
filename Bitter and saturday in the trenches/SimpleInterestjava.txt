@@ -1,0 +1,31 @@
+
+// Creating a BMI calculator  
+
+	import java.util.Scanner;
+
+	public class SimpleInterest{
+	public static void main(String[]args){
+
+// Creating scanner to obtain input from command line
+
+	Scanner input = new Scanner(System.in);
+	System.out.print("Enter principal amount: ");
+	double principleAmount = input.nextdouble();
+	System.out.print("Enter rate: ");
+	double rate = input.nextdouble();
+	System.out.print("Enter year: ");
+	int year = input.nextInt();
+
+	double principle Amount1 =principleAmount
+	double rate1 = rate
+	int year1 = year
+	int simpleInterst =( principle * rate * time)/100;
+	System.out.printf("simple Interest %f%n ",( principle * rate * time)/100; );
+}
+} // end of main method.
+ } // end of class.
+
+psuedocode
+1. collect weight and height from user
+2. use the Bmi formula to calculate user input
+3. make a decision base on th Bmi calculator result.
