@@ -1,0 +1,69 @@
+
+
+
+public class AsteriskShape {
+public static void main (String [] args) {
+    
+   /* for (int star = 1; star <=10;) {
+        for (int asterisk = 0; asterisk < star; asterisk ++) {
+        System.out.print ("*");
+    }
+
+    System.out.println();
+    star ++;
+        }*/
+
+   /* for (int star = 10; star <= 1;) {
+
+        for (int space = 0; space < 10; space ++) {
+         System.out.print("");
+        }
+
+     for (int asterisk = 10; asterisk > star; asterisk ++) {
+     System.out.print ("*");
+    }
+   
+    System.out.println();
+    star ++;
+        }*/
+
+/*for (int star = 1; star <= 10;) {
+    for (int space = 0; space < star; space ++) {
+         System.out.print("");
+}
+        for (int asterisk = 10; asterisk > star; asterisk --) {
+        System.out.print ("*");
+    }
+   
+    System.out.println();
+    star ++;
+        }
+
+    }
+
+    }
+*/
+
+
+    int firstNumber = 10;
+    int secondNumber = 20;
+    int largest = 0;
+
+        int numberOne = 2;
+        int numberTwo = 5;
+        int numberThree =10;
+
+            if ( firstNumber % numberOne ==0 && secondNumber % numberOne == 0) {
+            largest = numberOne;
+        }
+            else if ( firstNumber % numberTwo ==0 && secondNumber % numberTwo == 0){
+            largest = numberTwo;        
+        }
+
+            else if ( firstNumber % numberThree ==0 && secondNumber % numberThree == 0){
+            largest = numberThree;  
+         }
+           
+            System.out.print(largest);
+   }
+}     

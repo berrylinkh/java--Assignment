@@ -1,0 +1,64 @@
+import java. util.Arrays;
+import java.util.Scanner;
+public class TwinPrime {
+public static void main (String [] args) {
+
+/*Scanner input = new Scanner (System.in);
+
+
+    System.out.print("Enter number to print the prime number: ");
+    int number = input.nextInt(); 
+
+    int counter = 0;
+
+    for (int checker =1; checker <= number; checker ++) {
+        counter =0;
+        for (int check =1; check <= checker; check++ ) {
+            if (checker % check == 0) {
+            counter ++;
+                } 
+
+                }
+    if (counter == 2) {
+        System.out.printf(" %d%n ", checker);
+            }
+        }
+    */
+
+     //public static int[][] returningTwinPrime (int numbers) {
+        int[][] arrayNumbers = new int [4][2];
+        int counter =0;
+        int count =0; //track of my row
+        String arrayToString =" ";
+        
+            for(int checker =0; checker < 25; checker ++) {
+            counter =0;
+
+                for(int check = 1; check <= checker; check++) {
+                    if (checker % check ==0) {
+                    counter ++;
+                    }
+                }
+                int index = checker + 2;
+                int countIndex =0;
+                for(int checking = 1; checking <= index; checking++) {
+                    if (index  % checking ==0) {
+                    countIndex ++;
+                    if (counter ==2 && countIndex ==2){
+                    arrayNumbers[count][0] = checker;
+                    arrayNumbers[count][1] = index;
+
+                    System.out.print("( " +arrayNumbers[count][0] +" , "+arrayNumbers[count][1] + ")" +arrayToString);
+                    }
+                }
+            }
+               
+
+                
+            }
+    }
+}
+
+
+
+
