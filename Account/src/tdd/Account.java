@@ -2,18 +2,22 @@ package tdd;
 
 public class Account {
     private double balance = 0;
-    private int pin;
+    private String pin;
     
-    public Account (int pin) {
+    public Account (String pin) {
     this.pin = pin;
     }
     
-    public void checkPin(){
-    if pin != this.pin {
-     throw new IllegalArgumentException("Invalid pin");
+    public boolean checkPin(String pin) {
+    
+    if (this.pin.equals(pin)) {
+        return true;
+    } else {
+        return false;
     }
     }
     public double checkBalance() {
+        checkPin(pin);
         return balance;
     }
 
@@ -21,14 +25,23 @@ public class Account {
         if(amount > 0) balance += amount;
     }
 
-
-    public void withdraw(double amount) {
-        if (amount<= balance) balance -=amount;
-    }
-    
-   public void setPin(int pin) {
-        if (pin < 1000 || pin > 9999){
+    public void withdraw(double amount, String pin) {
+        checkPin(pin);
+        
+        if (!this.pin.equals(pin)){
         throw new IllegalArgumentException("Invalid pin");
         }
+        if (amount<= balance) {
+        balance -=amount;
+        }
     }
+        
+        public void setPin(String pin) {
+        if (pin.length() != 4) {
+            throw new IllegalArgumentException("Invalid pin");
+        }
+
+        this.pin = pin;
+    }
+    
 }
