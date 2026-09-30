@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Account/Account.iml" filepath="$PROJECT_DIR$/Account/Account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Air condition/Air condition.iml" filepath="$PROJECT_DIR$/Air condition/Air condition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ClassWork/ClassWork.iml" filepath="$PROJECT_DIR$/ClassWork/ClassWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Credit card V2/Credit card V2.iml" filepath="$PROJECT_DIR$/Credit card V2/Credit card V2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Nigeria/Nigeria.iml" filepath="$PROJECT_DIR$/Nigeria/Nigeria.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Data Structures/Stack/Stack.iml" filepath="$PROJECT_DIR$/Data Structures/Stack/Stack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Student Course (oop)/Student Course (oop).iml" filepath="$PROJECT_DIR$/Student Course (oop)/Student Course (oop).iml" />
+      <module fileurl="file://$PROJECT_DIR$/bike/bike.iml" filepath="$PROJECT_DIR$/bike/bike.iml" />
+      <module fileurl="file://$PROJECT_DIR$/checkout/checkout.iml" filepath="$PROJECT_DIR$/checkout/checkout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java--Assignment.iml" filepath="$PROJECT_DIR$/java--Assignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Data Structures/linkedlist/linkedlist.iml" filepath="$PROJECT_DIR$/Data Structures/linkedlist/linkedlist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/student/student.iml" filepath="$PROJECT_DIR$/student/student.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Account/test/test.iml" filepath="$PROJECT_DIR$/Account/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled1/untitled1.iml" filepath="$PROJECT_DIR$/untitled1/untitled1.iml" />
+    </modules>
+  </component>
+</project>

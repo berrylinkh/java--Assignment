@@ -28,4 +28,37 @@ public class GradeBook {
         }
         return sum;
     }
+
+    public double getAverageScore() {
+        double average = (double)totalScore() / results.size();
+        return average;
+    }
+
+    public int getHighestScore() {
+        int highestScore = results.get(0).getScore();
+        for (Result result: results ){
+            if( result.getScore() > highestScore){
+            highestScore = result.getScore();
+            }
+        }
+        return highestScore;
+    }
+
+    public int getLowestScore() {
+        int lowestScore = results.get(0).getScore();
+        for (Result result: results ){
+            if( result.getScore() < lowestScore){
+                lowestScore = result.getScore();
+            }
+        }
+        return lowestScore;
+    }
+
+    public String getResultStatus() {
+        if(getAverageScore() >= 70 && getAverageScore() <= 100 ){
+            return "Pass";
+        }else {
+            return "Fail";
+        }
+    }
 }

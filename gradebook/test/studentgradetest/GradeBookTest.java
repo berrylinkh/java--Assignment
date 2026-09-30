@@ -49,4 +49,48 @@ public class GradeBookTest {
         assertEquals(2,gradeBook.getResults().size());
         assertEquals(200, gradeBook.totalScore());
     }
+    @Test
+    public void testThatAverageIsCanBeCalculated(){
+        gradeBook.addResult(result);
+        Student secondStudent = new Student("Luke",12);
+        Result secondResult = new Result(secondStudent, subject, 100);
+        gradeBook.addResult(secondResult);
+        assertEquals(2,gradeBook.getResults().size());
+        assertEquals(200, gradeBook.totalScore());
+        assertEquals(100, gradeBook.getAverageScore());
+    }
+    @Test
+    public void testThatGetTheHighestScore(){
+        gradeBook.addResult(result);
+        Student secondStudent = new Student("Luke",12);
+        Result secondResult = new Result(secondStudent, subject, 80);
+        gradeBook.addResult(secondResult);
+        assertEquals(2,gradeBook.getResults().size());
+        assertEquals(180, gradeBook.totalScore());
+        assertEquals(90, gradeBook.getAverageScore());
+        assertEquals(100, gradeBook.getHighestScore());
+    }
+    @Test
+    public void testThatGetTheLowestScore(){
+        gradeBook.addResult(result);
+        Student secondStudent = new Student("Luke",12);
+        Result secondResult = new Result(secondStudent, subject, 80);
+        gradeBook.addResult(secondResult);
+        assertEquals(2,gradeBook.getResults().size());
+        assertEquals(180, gradeBook.totalScore());
+        assertEquals(90, gradeBook.getAverageScore());
+        assertEquals(80, gradeBook.getLowestScore());
+    }
+    @Test
+    public void testThatGetPassOrFail(){
+        gradeBook.addResult(result);
+        Student secondStudent = new Student("Luke",12);
+        Result secondResult = new Result(secondStudent, subject, 70);
+        gradeBook.addResult(secondResult);
+        assertEquals(2,gradeBook.getResults().size());
+        assertEquals(170, gradeBook.totalScore());
+        assertEquals(85, gradeBook.getAverageScore());
+        assertEquals(70, gradeBook.getLowestScore());
+        assertEquals("Pass", gradeBook.getResultStatus());
+    }
 }
