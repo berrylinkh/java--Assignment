@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/After party task" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Array Test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bitter and saturday in the trenches" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Exercise 7 Array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Exercise Seven Test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Kata" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Method" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Nokia task" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Prime factor" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RangeOfArray" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SERUBAWON" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Statistics Test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fibonacci test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/range test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/weekend dose test" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="junit-platform-console-standalone-1.11.1" level="project" />
+    <orderEntry type="library" name="junit-platform-console-standalone-1.11.7" level="project" />
+    <orderEntry type="library" name="junit-platform-console-standalone-1.11.0" level="project" />
+    <orderEntry type="library" name="junit-platform-console-standalone-1.11.5" level="project" />
+    <orderEntry type="library" name="junit-platform-console-standalone-1.11.3" level="project" />
+    <orderEntry type="library" name="junit-platform-console-standalone-1.11.4" level="project" />
+    <orderEntry type="library" name="junit-platform-console-standalone-1.11.6" level="project" />
+    <orderEntry type="library" name="junit-platform-console-standalone-1.11.2" level="project" />
+  </component>
+</module>
