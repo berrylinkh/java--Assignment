@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/gradebook.iml" filepath="$PROJECT_DIR$/gradebook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hashset.iml" filepath="$PROJECT_DIR$/hashset.iml" />
     </modules>
   </component>
 </project>
