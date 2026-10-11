@@ -1,7 +1,7 @@
 import java.util.NoSuchElementException;
 
 public class MySet {
-        private final int setCapacity = 5;
+        private  int setCapacity = 5;
         private String[] mySet;
         private int size;
 
@@ -38,33 +38,43 @@ public class MySet {
                 mySet = newSet;
             }
         }
-
-        public void add(String element) {
+        public boolean add(String element){
+            if(contains(element)){
+                return false;
+            }
             growIfFull();
             mySet[size] = element;
             size++;
+            return true;
         }
 
-        public void add(int index, String element) {
+
+    public boolean add(int index, String element) {
             validateAddIndex(index);
+            if(contains(element)){
+                return false;
+            }
             growIfFull();
             for (int position = size; position > index; position--) {
                 mySet[position] = mySet[position - 1];
             }
             mySet[index] = element;
             size++;
+            return true;
         }
+
         public void remove(int index) {
-            validateElementIndex(index);
-            for (int position = index; position < size - 1; position++) {
+            for (int position = index; position < size -1; position++) {
                 mySet[position] = mySet[position + 1];
             }
-            size--;
-        }
+                   mySet [size-1] = null;
+                   size --;
+               }
+
 
         public boolean contains(String element) {
             for (int position = 0; position < size; position++) {
-                if (mySet[position] == element) {
+                if (mySet[position].equals( element)) {
                     return true;
                 }
             }
@@ -75,9 +85,7 @@ public class MySet {
             return mySet[index];
         }
         public void clear() {
-            int index =0;
-            validateElementIndex(index);
-            for (int position = index; position < size - 1; position++) {
+            for (int position = 0; position < size ; position++) {
                 mySet[position] = null;
             }
             size =0;

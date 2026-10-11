@@ -17,52 +17,58 @@ public class MySetTest {
         }
         @Test
         public void testThatAnElement_CanBeAdded() {
-            set.add("java");
-            assertFalse(set.isEmpty());
+            assertTrue(set.add("java"));
             assertEquals(1, set.getSize());
         }
         @Test
         public void testThatMultipleElement_CanBeAdded(){
-            set.add("java");
-            set.add("python");
-            set.add("script");
+            assertTrue(set.add("java"));
+            assertTrue(set.add("python"));
+            assertTrue(set.add("script"));
             assertEquals(3, set.getSize());
         }
+    @Test
+    public void testThatSameElement_CanNotBeAdded(){
+        assertTrue(set.add("java"));
+        assertFalse(set.add("java"));
+        assertTrue(set.add("script"));
+        assertEquals(2, set.getSize());
+    }
         @Test
         public void testThatANewArray_CanBeCreated_AndElementCanBeAdded(){
-            set.add("java");
-            set.add("python");
-            set.add("script");
-            set.add("c++");
-            set.add("jango");
-            set.add("golan");
+            assertTrue(set.add("java"));
+            assertTrue(set.add("python"));
+            assertTrue(set.add("script"));
+            assertTrue(set.add("c++"));
+            assertTrue(set.add("jango"));
+            assertTrue(set.add("golang"));
             assertEquals(6, set.getSize());
         }
         @Test
         public void testThatAnElement_CanBeRemove() {
-            set.add("java");
+            assertTrue(set.add("java"));
             assertEquals(1, set.getSize());
             set.remove(0);
             assertEquals(0, set.getSize());
         }
         @Test
         public void testThatAnElement_CanBeRemoveFromIndex() {
-            set.add("java");
-            set.add("python");
-            set.add("script");
-            set.add("c++");
-            set.add("jango");
+            assertTrue(set.add("java"));
+            assertTrue(set.add("python"));
+            assertTrue(set.add("script"));
+            assertTrue(set.add("c++"));
+            assertTrue(set.add("jango"));
             assertEquals(5, set.getSize());
             set.remove(3);
             assertEquals(4, set.getSize());
         }
         @Test
         public void testThatMultipleElement_CanBeRemoveFromIndex() {
-            set.add("java");
-            set.add("python");
-            set.add("script");
-            set.add("c++");
-            set.add("jango");
+            assertTrue(set.add("java"));
+            assertTrue(set.add("python"));
+            assertTrue(set.add("script"));
+            assertTrue(set.add("c++"));
+            assertTrue(set.add("jango"));
             assertEquals(5, set.getSize());
             set.remove(3);
             assertEquals(4, set.getSize());
@@ -71,23 +77,22 @@ public class MySetTest {
         }
         @Test
         public void testThatSet_ContainAnElement() {
-            set.add("java");
-            set.add("python");
-            set.add("script");
-            set.add("c++");
-            set.add("jango");
-            assertEquals(5, set.getSize());
-            assertTrue(set.contains("c++"));
+            assertTrue(set.add("java"));
+            assertTrue(set.contains(new String ("java")));
+            assertTrue(set.add("python"));
+            assertTrue(set.contains(new String ("python")));
+            assertEquals(2, set.getSize());
 
         }
     @Test
     public void testThatSet_ClearElement() {
-        set.add("java");
-        set.add("python");
-        set.add("script");
-        set.add("c++");
-        set.add("jango");
-        assertEquals(5, set.getSize());
+        assertTrue(set.add("java"));
+        assertTrue(set.contains(new String ("java")));
+        assertTrue(set.add("python"));
+        assertTrue(set.contains(new String ("python")));
+        assertTrue(set.add("script"));
+        assertTrue(set.contains(new String ("script")));
+        assertEquals(3, set.getSize());
         set.clear();
         assertEquals(0, set.getSize());
     }
