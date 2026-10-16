@@ -28,6 +28,12 @@ public class DriverRepositoryImpl implements DriverRepository {
     driver.setId(++numbersOfDrivers);
     drivers.add(driver);
     }
+    else {
+        int index = drivers.indexOf(driver);
+        if (index != -1) {
+            drivers.set(index, driver);
+        }
+    }
     return driver;
     }
 
@@ -76,8 +82,8 @@ public class DriverRepositoryImpl implements DriverRepository {
     if (toDelete.getId() == driver.getId()) {
     drivers.remove(toDelete);
     break;
-    }
-    }
+        }
+        }
     }
     }
 

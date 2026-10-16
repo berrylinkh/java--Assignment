@@ -1,6 +1,9 @@
 package com.lastma.data.models;
 
+import java.util.ArrayList;
+
 public class Driver {
+    private ArrayList<String> vehicle;
     private int id;
     private String fullName;
     private String email;

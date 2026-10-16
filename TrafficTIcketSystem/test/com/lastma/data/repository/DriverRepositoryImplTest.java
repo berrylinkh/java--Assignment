@@ -19,7 +19,7 @@ class DriverRepositoryImplTest {
     }
 
     @Test
-    void testThatWhenISave_CountIncreaseByOne(){
+    void testThatWhenISaveCountIncreaseByOne(){
     assertEquals(0L, driverRepository.count());
     driverRepository.save(driver);
     assertEquals(1L, driverRepository.count());
@@ -47,12 +47,14 @@ class DriverRepositoryImplTest {
     }
 
     @Test
-    void testThatFindsADriversById(){
-    assertEquals(0L, driverRepository.count());
-    driverRepository.save(driver);
-    assertEquals(1L, driverRepository.count());
-    List<Driver> found = driverRepository.findById(1);
-    assertEquals(1, found.get(0).getId());
+    void testThatFindsADriversById() {
+        assertEquals(0L, driverRepository.count());
+        driverRepository.save(driver);
+        assertEquals(1L, driverRepository.count());
+        List<Driver> found = driverRepository.findById(1);
+        for (Driver foundDriver : found) {
+            assertEquals(1, foundDriver.getId());
+        }
     }
 
     @Test

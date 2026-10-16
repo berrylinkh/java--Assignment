@@ -2,12 +2,22 @@ package com.lastma.data.models;
 
 import java.time.Year;
 
-public class vehicle {
+public class Vehicle {
+
+    private int id;
     private String brand;
     private String model;
     private Year year;
     private VehicleTypes types;
 
+    public int getId() {
+        return id;
+    }
+
+    public Vehicle setId(int id) {
+        this.id = id;
+        return this;
+    }
 
     public String getBrand() {
         return brand;
